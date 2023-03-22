@@ -1,5 +1,6 @@
 # Sarahah_ASKME
 A clone for Sarahah App in which user can anonymously send message to existing users in database.
+Built using Node.js, Express, Mongoose and tested with Postman.
 
 The app has been built upon applying many concepts like:
 1- Authentication/Authorization Middleware
