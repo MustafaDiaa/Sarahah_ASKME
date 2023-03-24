@@ -1,9 +1,17 @@
 import nodemailer from "nodemailer";
 
 // async..await is not allowed in global scope, must use a wrapper
-async function sendEmail({to=[], cc, bcc, subject, text, html, attachments= []}={}) {
+async function sendEmail({
+  to = [],
+  cc,
+  bcc,
+  subject,
+  text,
+  html,
+  attachments = [],
+} = {}) {
   let transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: "gmail",
     auth: {
       user: process.env.EMAIL, // generated ethereal user
       pass: process.env.EMAIL_PASSWORD, // generated ethereal password

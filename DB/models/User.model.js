@@ -39,7 +39,7 @@ const userScheme = new Schema(
     age: Number,
     phone: String,
     profilePic: String,
-    coverPic: String,
+    coverPic: [String],
     address: String,
   },
   { timestamps: true }
