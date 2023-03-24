@@ -1,8 +1,13 @@
 # Sarahah_ASKME
 A clone for Sarahah App in which user can anonymously send message to existing users in database.
 Built using Node.js, Express, Mongoose and tested with Postman.
+Made consideration to the code readability and folder structure.
 
-The app has been built upon applying many concepts like:
+Authentication/Authorization using jsonwebtoken.
+Password hashed using bcryptjs.
+File upload using Multer, with some modification to add more customization to the folder path to be more dynamic. In which someone can save the uploaded files to any specified custom path.
+
+The app has applied many concepts like:
 1- Authentication/Authorization Middleware
 2- Global Error Handling
 3- Global Validation
